@@ -35,7 +35,7 @@ jobs:
     # تشغيل playit.gg
     - name: Start Playit Agent
       env:
-        PLAYIT_SECRET: ${{ secrets.pl }}  # حط السيكرت في Settings → Secrets
+        PLAYIT_SECRET: ${{ secrets.PL }}  # حط السيكرت في Settings → Secrets
       run: |
         Start-Process -FilePath "$env:USERPROFILE\playit.exe" -ArgumentList "--secret $env:PLAYIT_SECRET" -NoNewWindow
 
